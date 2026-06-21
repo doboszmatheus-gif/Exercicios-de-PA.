@@ -1,0 +1,18 @@
+alunos = []
+
+for i in range(5):
+    nome = input("Digite o nome do aluno: ")
+    alunos.append(nome)
+
+nome_busca = input("Digite o nome para procurar: ")
+
+encontrado = False
+
+for aluno in alunos:
+    if aluno == nome_busca:
+        encontrado = True
+
+if encontrado:
+    print("Aluno encontrado")
+else:
+    print("Aluno não encontrado")
