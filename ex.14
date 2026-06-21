@@ -1,0 +1,18 @@
+numeros = []
+
+for i in range(8):
+    numero = int(input("Digite um número: "))
+    numeros.append(numero)
+
+maior = numeros[0]
+menor = numeros[0]
+
+for num in numeros:
+    if num > maior:
+        maior = num
+
+    if num < menor:
+        menor = num
+
+print("Maior =", maior)
+print("Menor =", menor)
