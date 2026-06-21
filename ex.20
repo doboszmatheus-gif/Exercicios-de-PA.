@@ -1,0 +1,32 @@
+nomes = []
+notas = []
+
+for i in range(5):
+    nome = input("Nome do aluno: ")
+    nota = float(input("Nota: "))
+
+    nomes.append(nome)
+    notas.append(nota)
+
+soma = 0
+aprovados = 0
+
+for nota in notas:
+    soma += nota
+
+    if nota >= 6:
+        aprovados += 1
+
+media = soma / 5
+
+maior_nota = notas[0]
+melhor_aluno = nomes[0]
+
+for i in range(5):
+    if notas[i] > maior_nota:
+        maior_nota = notas[i]
+        melhor_aluno = nomes[i]
+
+print("Média da turma =", media)
+print("Aprovados =", aprovados)
+print("Melhor aluno =", melhor_aluno)
