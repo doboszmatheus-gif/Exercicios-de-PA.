@@ -1,0 +1,9 @@
+frase = input("Digite uma frase: ")
+
+contador = 0
+
+for letra in frase:
+    if letra == "a" or letra == "e" or letra == "i" or letra == "o" or letra == "u":
+        contador += 1
+
+print("Quantidade de vogais =", contador)
